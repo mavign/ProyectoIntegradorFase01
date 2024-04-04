@@ -18,6 +18,8 @@ main .section-cards-container {
 }
 
 main section img {
+    margin-left: auto;
+    margin-right: auto;
     width: 150px;
     height: auto;
     max-width: 100%;
@@ -40,6 +42,10 @@ main section a {
 }
 
 main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
     border: 2px solid #a97416;
     width: 350px;
     padding: 15px;
