@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="logo"></div>
+            <div id="barra-busqueda">
+                <form action="#">                    
+                    <input type="text" placeholder="Buscar Productos..">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>            
+        </div>
+    </header>
+
+    <main>        
+
+        <form class="contacto-form">
+
+            <h1>Contacto</h1>
+            
+            <div class="contacto-group">
+                <label for="nombre">nombre</label>
+                <input class="entrada" id="nombre" type="text" name="nombre" required>
+            </div>
+
+            <div class="contacto-group">
+                <label for="email">e-mail</label>
+                <input class="entrada" type="email" name="email" placeholder="mail@gmail.com" required>
+            </div>
+
+            <div class="contacto-group">
+                <label for="comentarios">comentarios</label>
+                <textarea name="comentarios" id="comentarios" required></textarea>
+            </div>
+
+            <button>Enviar</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <h3>&copy; Diagon Alley S.A.</h3>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

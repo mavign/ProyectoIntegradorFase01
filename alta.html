@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/alta.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="./index.html">Inicio</a> </li>
+                <li> <a href="./alta.html">Alta</a> </li>
+                <li> <a href="./contacto.html">Contacto</a> </li>
+                <li> <a href="./nosotros.html">Nosotros</a> </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div id="logo"></div>
+            <div id="barra-busqueda">
+                <form action="#">
+                    <input type="text" placeholder="Buscar Productos..">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main>        
+
+        <form class="alta-form">
+
+            <h1>Alta de productos</h1>
+
+            <div class="input-group">
+                <label for="nombre">nombre</label>
+                <input class="entrada" id="nombre" type="text" name="nombre" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="precio">precio</label>
+                <input class="entrada" id="precio" type="number" step="0.00" name="precio" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="stock">stock</label>
+                <input class="entrada" id="stock" type="number" name="stock" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="marca">marca</label>
+                <input class="entrada" id="marca" type="text" name="marca" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="categoria">categoría</label>
+                <input class="entrada" id="categoria" type="text" name="categoria" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="descripción corta">descripción corta</label>
+                <input class="entrada" id="descripcionCorta" type="text" name="descripción corta" maxlength="50" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="descripción larga">descripción larga</label>
+                <input class="entrada" id="descripcionLarga" type="text" name="descripción larga" minlength="60" required>
+                <div class="error-details"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="edadMin">edad desde</label>
+                <input class="entrada" id="edadMin" type="number" name="EdadMin" min="8" required>
+                <div class="error-details"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="edadMax">edad hasta</label>
+                <input class="entrada" id="edadMax" type="number" name="edadMax" required>
+                <div class="error-details"></div>
+            </div>
+            
+            <div class="input-group">
+                <label for="foto">foto</label>
+                <input class="entrada" id="foto" type=" " name="foto" required>
+                <div class="error-details"></div>
+            </div>
+            
+            <div class="input-group">
+                <input class="entrada" id="envio" type="checkbox" name="envio">
+                <label for="envio">envío sin cargo</label>
+            </div>
+
+            <button>Agregar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+
+    </main>
+
+    <footer>
+        <h3>&copy; Diagon Alley S.A.</h3>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/alta.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
