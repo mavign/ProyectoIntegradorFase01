@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+main {    
+    padding: 20px;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border: 1px solid #a97416;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 1s 0s ease-out;
+}
+
+h1{
+    margin-bottom: 60px;
+}
+
+main:hover {
+    border: 2px solid #a97416;
+    background-color:rgba(0, 0, 0, .7);
+}
+

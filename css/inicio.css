@@ -1,45 +1,75 @@
-main {
-    height: auto;
-    background-color: #689;
-    padding: 25px;
+* {
+    box-sizing: border-box;
+}
+
+main {    
     text-align: center;
+    padding: 20px;
+    height: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    color: white;
 }
 
 main .section-cards-container {
     display: flex;
-    /* flex-wrap: nowrap; */
     flex-wrap: wrap;
-
     justify-content: space-evenly;
 }
 
 main section img {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 20px; 
+    transition: all 2s 0s ease-out;       
+}
+
+main section a {
+    background-color: #57224e; 
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 2px;
+    width: 100%;
+    height: 35px;
+    line-height: 30px;
+    transition: all 1s 0s ease-out;
 }
 
 main section {
-    border: 1px  dashed yellow;
+    border: 2px solid #a97416;
     width: 350px;
     padding: 15px;
-    background-color:#943;
-    color: white;
+    background-color:rgba(0, 0, 0, .5);    
     margin: 25px;
     border-radius: 15px;
+    transition: all 1s 0s ease-out;
 }
 
 main section h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    text-decoration: underline;
-    color: rgba(255,255,255,0.7)
+    text-decoration: none;
+    color: white;    
 }
 
-main .section-cards-header h1 {
-    color: white;
-    margin-bottom: 40px;
+
+
+main section img:hover {
+    width: 300px;
+    height: auto;
 }
 
-main .section-cards-container p {
-    /* text-align: left; */
+main section a:hover {
+    background-color: white; 
+    color: #a97416;    
+    border: 1px solid #a97416;
+}
+
+main section:hover {
+    border: 4px solid #a97416;
+    background-color:rgba(0, 0, 0, .7);
 }
